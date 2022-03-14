@@ -22,13 +22,13 @@ export class ClassState extends React.Component {
     componentDidUpdate() {
         console.log("Actualización");
 
-        // if (this.state.loading) {
+        if (this.state.loading) {
             setTimeout(() => {
                 console.log("Haciendo la validación");
                 this.setState({ loading: false });
                 console.log("Terminando la validación");
             }, 3000);
-        // }
+        }
     }
 
     render() {
